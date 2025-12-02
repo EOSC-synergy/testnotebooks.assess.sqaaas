@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testnotebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-mustard-horse.sh
-        container: qc.acc_shaggy-chestnut-bee
+        - /usr/bin/env sh .sqa/script.homey-ivory-mist.sh
+        container: qc.acc_scanty-bistre-drever
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testnotebooks find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-black-collie.sh
-        container: qc.doc_tasty-magnolia-drever
+        - /usr/bin/env sh .sqa/script.crappy-sangria-sheepdog.sh
+        container: qc.doc_boozy-champagne-woodpecker
       github.com/PalomoIFCA/testnotebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-periwinkle-axolotl.sh
-        container: qc.doc_foggy-wisteria-boar
+        - /usr/bin/env sh .sqa/script.sleepy-zucchini-birman.sh
+        container: qc.doc_snappy-puce-cassowary
       github.com/PalomoIFCA/testnotebooks markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-jade-dog.sh
-        container: qc.doc_foggy-tangerine-giraffe
+        - /usr/bin/env sh .sqa/script.lousy-ochre-woodlouse.sh
+        container: qc.doc_sleepy-maroon-beetle
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testnotebooks licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-brown-worm.sh
-        container: qc.lic_fuzzy-ruby-tetra
+        - /usr/bin/env sh .sqa/script.cheeky-yellow-flamingo.sh
+        container: qc.lic_messy-beige-zebra
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testnotebooks get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-flax-zorse.sh
-        container: qc.ver_cheeky-saffron-forest
+        - /usr/bin/env sh .sqa/script.wiggy-white-gar.sh
+        container: qc.ver_jumpy-cream-deer
 timeout: 5400
