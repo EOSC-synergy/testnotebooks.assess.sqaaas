@@ -1,0 +1,20 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: feature/pynblint
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/PalomoIFCA/testnotebooks:
+      branch: main
+      repo: https://github.com/PalomoIFCA/testnotebooks
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Sty:
+    repos:
+      github.com/PalomoIFCA/testnotebooks pynblint.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gloppy-orchid-crocodile.sh
+        container: qc.sty_woolly-thistle-uakari
+timeout: 5400
