@@ -11,7 +11,7 @@ pipeline {
     agent any
 
     stages {
-        stage('SQA baseline criterion: QC.Sty') {
+        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Ver') {
             when {
                 anyOf {
                     expression { currentBuild.previousCompletedBuild == null }

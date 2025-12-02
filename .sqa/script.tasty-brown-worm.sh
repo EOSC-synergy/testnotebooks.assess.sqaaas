@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testnotebooks &&
-    pynblint.py
+    licensee detect . --confidence 60 --json 
 )

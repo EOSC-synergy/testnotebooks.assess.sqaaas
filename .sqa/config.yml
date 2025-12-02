@@ -11,10 +11,36 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Sty:
+  QC.Acc:
     repos:
-      github.com/PalomoIFCA/testnotebooks pynblint.py:
+      github.com/PalomoIFCA/testnotebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-magenta-impala.sh
-        container: qc.sty_bumpy-bistre-wolfhound
+        - /usr/bin/env sh .sqa/script.hasty-mustard-horse.sh
+        container: qc.acc_shaggy-chestnut-bee
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testnotebooks find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.snazzy-black-collie.sh
+        container: qc.doc_tasty-magnolia-drever
+      github.com/PalomoIFCA/testnotebooks git:
+        commands:
+        - /usr/bin/env sh .sqa/script.foggy-periwinkle-axolotl.sh
+        container: qc.doc_foggy-wisteria-boar
+      github.com/PalomoIFCA/testnotebooks markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleepy-jade-dog.sh
+        container: qc.doc_foggy-tangerine-giraffe
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testnotebooks licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-brown-worm.sh
+        container: qc.lic_fuzzy-ruby-tetra
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testnotebooks get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-flax-zorse.sh
+        container: qc.ver_cheeky-saffron-forest
 timeout: 5400
