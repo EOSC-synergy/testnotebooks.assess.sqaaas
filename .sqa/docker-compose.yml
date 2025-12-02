@@ -1,5 +1,5 @@
 services:
-  qc.sty_woolly-thistle-uakari:
+  qc.sty_bumpy-bistre-wolfhound:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pynblint
       dockerfile: Dockerfile

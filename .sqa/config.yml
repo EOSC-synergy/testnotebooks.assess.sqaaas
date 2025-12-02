@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testnotebooks pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-orchid-crocodile.sh
-        container: qc.sty_woolly-thistle-uakari
+        - /usr/bin/env sh .sqa/script.bluesy-magenta-impala.sh
+        container: qc.sty_bumpy-bistre-wolfhound
 timeout: 5400
