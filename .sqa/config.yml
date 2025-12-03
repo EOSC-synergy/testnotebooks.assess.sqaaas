@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testnotebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-wheat-zebra.sh
-        container: qc.acc_tasty-alizarin-ocelot
+        - /usr/bin/env sh .sqa/script.foggy-green-wrasse.sh
+        container: qc.acc_geeky-jade-penguin
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testnotebooks find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-platinum-gorilla.sh
-        container: qc.doc_sleazy-tomato-hyena
+        - /usr/bin/env sh .sqa/script.shaggy-amber-malamute.sh
+        container: qc.doc_sloppy-celadon-crane
       github.com/PalomoIFCA/testnotebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-linen-frog.sh
-        container: qc.doc_stuffy-cyan-serval
+        - /usr/bin/env sh .sqa/script.surly-cinnabar-turtle.sh
+        container: qc.doc_chummy-pink-chipmunk
       github.com/PalomoIFCA/testnotebooks markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-scarlet-butterfly.sh
-        container: qc.doc_beady-magenta-walrus
+        - /usr/bin/env sh .sqa/script.chummy-pear-angora.sh
+        container: qc.doc_messy-orchid-lizard
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testnotebooks licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-coral-squid.sh
-        container: qc.lic_squeaky-periwinkle-falcon
+        - /usr/bin/env sh .sqa/script.scaly-bistre-barracuda.sh
+        container: qc.lic_pasty-pumpkin-boar
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testnotebooks get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-magenta-caterpillar.sh
-        container: qc.ver_slaphappy-heliotrope-dugong
+        - /usr/bin/env sh .sqa/script.crappy-bistre-shrew.sh
+        container: qc.ver_pasty-malachite-numbat
 timeout: 5400
