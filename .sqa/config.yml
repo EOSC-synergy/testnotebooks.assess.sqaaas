@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testnotebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-pumpkin-donkey.sh
-        container: qc.acc_whiny-sangria-dragon
+        - /usr/bin/env sh .sqa/script.squeaky-wheat-zebra.sh
+        container: qc.acc_tasty-alizarin-ocelot
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testnotebooks find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-gamboge-argentino.sh
-        container: qc.doc_tasty-ochre-gerbil
+        - /usr/bin/env sh .sqa/script.homey-platinum-gorilla.sh
+        container: qc.doc_sleazy-tomato-hyena
       github.com/PalomoIFCA/testnotebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-cobalt-horse.sh
-        container: qc.doc_nippy-coral-hedgehog
+        - /usr/bin/env sh .sqa/script.tacky-linen-frog.sh
+        container: qc.doc_stuffy-cyan-serval
       github.com/PalomoIFCA/testnotebooks markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-white-bloodhound.sh
-        container: qc.doc_squirrely-dandelion-corgi
+        - /usr/bin/env sh .sqa/script.hasty-scarlet-butterfly.sh
+        container: qc.doc_beady-magenta-walrus
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testnotebooks licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-alizarin-moth.sh
-        container: qc.lic_wheezy-sapphire-cassowary
+        - /usr/bin/env sh .sqa/script.smelly-coral-squid.sh
+        container: qc.lic_squeaky-periwinkle-falcon
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testnotebooks get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-purple-bat.sh
-        container: qc.ver_shaky-black-zebra
+        - /usr/bin/env sh .sqa/script.sickly-magenta-caterpillar.sh
+        container: qc.ver_slaphappy-heliotrope-dugong
 timeout: 5400
